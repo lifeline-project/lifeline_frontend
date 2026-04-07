@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lifeline - Sign In</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00A79D",
+                        "background-light": "#F0F4F3",
+                        "background-dark": "#0f1715",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center p-4">
+<div class="w-full max-w-md bg-white dark:bg-slate-900 shadow-xl rounded-xl overflow-hidden flex flex-col">
+<!-- Header Section -->
+<div class="pt-10 pb-6 px-8 flex flex-col items-center">
+<div class="bg-[#00A79D]/10 p-4 rounded-full mb-4">
+<span class="material-symbols-outlined text-[#00A79D] text-5xl">pulse_alert</span>
+</div>
+<h1 class="text-2xl font-bold text-slate-900 dark:text-slate-100 text-center">Sign In to Lifeline</h1>
+<p class="text-slate-500 dark:text-slate-400 text-sm mt-2 text-center">Your health journey continues here</p>
+</div>
+<!-- Form Section -->
+<div class="px-8 pb-4 space-y-5">
+<!-- Email Input -->
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Username or Email</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-slate-400">
+                        mail
+                    </span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-slate-900 dark:text-slate-100 placeholder:text-slate-400" placeholder="name@example.com" type="email"/>
+</div>
+</div>
+<!-- Password Input -->
+<div class="space-y-1.5">
+<div class="flex justify-between items-center px-1">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Password</label>
+<a class="text-xs font-bold text-[#00A79D] hover:underline" href="#">Forgot Password?</a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-slate-400">
+                        lock
+                    </span>
+<input class="w-full pl-12 pr-12 py-3.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-slate-900 dark:text-slate-100 placeholder:text-slate-400" placeholder="Enter your password" type="password"/>
+<span class="material-symbols-outlined absolute right-4 text-slate-400 cursor-pointer hover:text-slate-600 dark:hover:text-slate-200">
+                        visibility
+                    </span>
+</div>
+</div>
+<!-- Sign In Button -->
+<button class="w-full bg-[#00A79D] hover:bg-[#00A79D]/90 text-white font-bold py-4 rounded-lg shadow-lg shadow-[#00A79D]/20 transition-all flex items-center justify-center gap-2">
+                Sign In
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+<!-- Divider -->
+<div class="px-8 py-4 flex items-center gap-4">
+<div class="h-[1px] flex-1 bg-slate-200 dark:bg-slate-700"></div>
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest">OR</span>
+<div class="h-[1px] flex-1 bg-slate-200 dark:bg-slate-700"></div>
+</div>
+<!-- Social Logins -->
+<div class="px-8 pb-8 space-y-3">
+<button class="w-full flex items-center justify-center gap-3 py-3.5 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-slate-700 dark:text-slate-200 font-semibold">
+<svg class="w-5 h-5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+                Continue with Google
+            </button>
+<button class="w-full flex items-center justify-center gap-3 py-3.5 bg-black hover:bg-slate-900 rounded-lg transition-colors text-white font-semibold">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.05 20.28c-.96.95-2.06 1.94-3.3 1.94-1.2 0-1.63-.76-3.1-.76s-1.98.74-3.1.74c-1.25 0-2.45-1.12-3.48-2.58-2.13-2.98-2.13-7.73 0-10.7 1.03-1.44 2.53-2.35 3.93-2.35 1.08 0 1.9.64 2.86.64.92 0 1.54-.64 2.84-.64 1.28 0 2.5.7 3.3 1.74-2.7 1.6-2.26 5.3.46 6.42-.64 1.56-1.5 3.08-2.4 4.1-.01.44.01.89.01 1.45zM12.03 5.4c0-2.52 2.13-4.63 4.63-4.63.15 2.45-2.1 4.77-4.63 4.63z"></path>
+</svg>
+                Continue with Apple
+            </button>
+</div>
+<!-- Footer -->
+<div class="bg-slate-50 dark:bg-slate-800/50 p-6 text-center">
+<p class="text-sm text-slate-600 dark:text-slate-400">
+                Don't have an account? 
+                <a class="text-xs font-bold text-[#00A79D] hover:underline" href="#">Sign Up</a>
+</p>
+</div>
+</div>
+</body></html>

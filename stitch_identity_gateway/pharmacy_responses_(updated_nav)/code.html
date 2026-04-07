@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LifeLine - Pharmacy Responses</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00a89d",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0f2322",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .search-pulse {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #00a89d;
+            margin-right: 6px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen w-full max-w-md mx-auto flex-col bg-background-light dark:bg-background-dark shadow-xl overflow-x-hidden">
+<!-- Header Section -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="flex items-center p-4 justify-between">
+<div class="text-primary flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center">Active Broadcast Responses</h2>
+<div class="flex size-10 items-center justify-end">
+<span class="material-symbols-outlined text-slate-500">more_vert</span>
+</div>
+</div>
+<div class="flex items-center justify-center pb-4 pt-1 px-4">
+<p class="text-primary text-sm font-medium leading-normal flex items-center">
+<span class="search-pulse"></span>
+                    Searching for more... 📡
+                </p>
+</div>
+</header>
+<!-- Main Content Scroll Area -->
+<main class="flex-1 overflow-y-auto pb-24">
+<!-- Request Summary Card -->
+<div class="px-4 py-3">
+<div class="bg-white dark:bg-slate-800/50 border border-primary/20 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<div class="flex flex-col">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider">Medicine Requested</p>
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold">Insulin - 2 Units</p>
+</div>
+</div>
+</div>
+<!-- Pharmacy Responses List -->
+<div class="px-4 py-2">
+<h3 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-widest px-1 pb-3 opacity-60">Nearby Responses</h3>
+<div class="flex flex-col gap-4">
+<!-- Pharmacy Card 1 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h4 class="text-primary text-lg font-bold">City Care Pharma</h4>
+<div class="flex items-center gap-1 text-slate-500 dark:text-slate-400 text-sm mt-0.5">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>1.2 km away</span>
+</div>
+</div>
+<span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide border border-emerald-200 dark:border-emerald-800">
+                                In Stock
+                            </span>
+</div>
+<div class="flex items-center justify-between mt-4">
+<div class="flex flex-col">
+<span class="text-slate-400 dark:text-slate-500 text-xs">Estimated Price</span>
+<span class="text-slate-900 dark:text-slate-100 text-xl font-extrabold">$15.00</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="size-11 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-700 text-primary border border-primary/10">
+<span class="material-symbols-outlined">call</span>
+</button>
+<button class="h-11 px-6 flex items-center justify-center rounded-xl bg-primary text-white font-bold text-sm shadow-lg shadow-primary/20 hover:bg-primary/90 transition-colors">
+                                    Reserve
+                                </button>
+</div>
+</div>
+</div>
+<!-- Pharmacy Card 2 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h4 class="text-primary text-lg font-bold">HealWay Pharmacy</h4>
+<div class="flex items-center gap-1 text-slate-500 dark:text-slate-400 text-sm mt-0.5">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>2.8 km away</span>
+</div>
+</div>
+<span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide border border-emerald-200 dark:border-emerald-800">
+                                In Stock
+                            </span>
+</div>
+<div class="flex items-center justify-between mt-4">
+<div class="flex flex-col">
+<span class="text-slate-400 dark:text-slate-500 text-xs">Estimated Price</span>
+<span class="text-slate-900 dark:text-slate-100 text-xl font-extrabold">$14.50</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="size-11 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-700 text-primary border border-primary/10">
+<span class="material-symbols-outlined">call</span>
+</button>
+<button class="h-11 px-6 flex items-center justify-center rounded-xl bg-primary text-white font-bold text-sm shadow-lg shadow-primary/20 hover:bg-primary/90 transition-colors">
+                                    Reserve
+                                </button>
+</div>
+</div>
+</div>
+<!-- Map Preview Placeholder -->
+<div class="mt-2 rounded-xl overflow-hidden relative h-32 w-full group">
+<img class="w-full h-full object-cover" data-alt="A map showing nearby pharmacy locations" data-location="Downtown City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwqGJFB3z2AN5Q6TiPkaOFYLd0uHTQFdbVllmdU_RpSurclj5MsDD4CUvuKrmY9r5TyplhS4AkngSRQjPZ5Q_nnaHymuhREk21xzvx6IQf_ivC1kNOg0Mfx4AU8o_ba3y31712sMeB7WK93pvkYZyPUBaR1Bfr8wPa8NTfvqBFIQsW3iTv4ExKw-8CqyzhKER9k2NSVvOh79YEKsLa4kOt3g0zbBqa22tNJ60O2XFXUfu1_RTnpc7WNET0xHQlr9PbrmYK_36vpS_Y"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+<button class="bg-white/90 dark:bg-slate-900/90 backdrop-blur px-4 py-2 rounded-full text-primary text-xs font-bold flex items-center gap-2 shadow-lg">
+<span class="material-symbols-outlined text-sm">map</span>
+                                View all on map
+                            </button>
+</div>
+</div>
+<!-- Pharmacy Card 3 (Limited Stock) -->
+<div class="bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm border border-slate-100 dark:border-slate-700 opacity-80">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h4 class="text-primary text-lg font-bold">Metro Health Hub</h4>
+<div class="flex items-center gap-1 text-slate-500 dark:text-slate-400 text-sm mt-0.5">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>4.1 km away</span>
+</div>
+</div>
+<span class="bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide border border-amber-200 dark:border-amber-800">
+                                2 Left
+                            </span>
+</div>
+<div class="flex items-center justify-between mt-4">
+<div class="flex flex-col">
+<span class="text-slate-400 dark:text-slate-500 text-xs">Estimated Price</span>
+<span class="text-slate-900 dark:text-slate-100 text-xl font-extrabold">$16.20</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="size-11 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-700 text-primary border border-primary/10">
+<span class="material-symbols-outlined">call</span>
+</button>
+<button class="h-11 px-6 flex items-center justify-center rounded-xl bg-primary text-white font-bold text-sm shadow-lg shadow-primary/20">
+                                    Reserve
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-white/95 dark:bg-background-dark/95 backdrop-blur-lg border-t border-primary/10 px-6 py-2 pb-6 flex justify-between items-center z-20">
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<div class="relative">
+<span class="material-symbols-outlined">broadcast_on_home</span>
+<span class="absolute -top-1 -right-1 size-2 bg-red-500 rounded-full border-2 border-white dark:border-background-dark"></span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest">Live Status</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">local_hospital</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Hospital</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</div>
+</body></html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LifeLine - New Request</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script content="tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'primary': '#00A79D', 'background-light': '#F0F4F3', 'background-dark': '#0f2322' }, fontFamily: { 'display': ['Manrope', 'sans-serif'] }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' } } } }" id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00a89d",
+                        "background-light": "#f0f4f3",
+                        "background-dark": "#0f2322",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-[#F0F4F3] dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-10 bg-white dark:bg-slate-900 border-b border-primary/10 px-4 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-200">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">New Request</h1>
+</div>
+<button class="flex items-center justify-center size-10 rounded-full text-[#00A79D] bg-[#00A79D]/10">
+<span class="material-symbols-outlined fill">account_circle</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-1 overflow-y-auto px-4 py-6 space-y-6 max-w-lg mx-auto w-full">
+<!-- Upload Prescription Area -->
+<section class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-primary/5">
+<div class="flex flex-col items-center gap-4 text-center border-2 border-dashed rounded-xl px-4 py-10 bg-[#00A79D]/5 border-[#00A79D]/30">
+<div class="size-16 rounded-full bg-white dark:bg-slate-700 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-3xl text-[#00A79D]">add_a_photo</span>
+</div>
+<div class="space-y-1">
+<h2 class="text-lg font-bold text-slate-900 dark:text-white">Upload Prescription</h2>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Tap to upload a clear photo of your prescription or medicine packaging
+                    </p>
+</div>
+<button class="mt-2 flex items-center gap-2 bg-[#00A79D] hover:bg-[#008d84] text-white font-bold py-3 px-8 rounded-lg transition-all shadow-md active:scale-95">
+<span class="material-symbols-outlined text-xl">upload_file</span>
+                    Choose File
+                </button>
+</div>
+</section>
+<!-- Form Fields -->
+<section class="space-y-4">
+<div class="flex flex-col gap-2">
+<label class="text-base font-semibold text-slate-700 dark:text-slate-300 ml-1">Medicine Name (Optional)</label>
+<input class="w-full h-14 rounded-xl border bg-white dark:bg-slate-800 dark:border-primary/40 px-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-400 border-[#00A79D]/20" placeholder="e.g., Paracetamol 500mg" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-base font-semibold text-slate-700 dark:text-slate-300 ml-1">Additional Notes</label>
+<textarea class="w-full min-h-[140px] rounded-xl border bg-white dark:bg-slate-800 dark:border-primary/40 p-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-400 resize-none border-[#00A79D]/20" placeholder="Please provide dosage details or specific brand preferences..."></textarea>
+</div>
+</section>
+<!-- Information Box -->
+<div class="border rounded-xl p-4 flex gap-3 bg-[#00A79D]/10 border-[#00A79D]/20">
+<span class="material-symbols-outlined shrink-0 text-[#00A79D]">info</span>
+<div class="space-y-1">
+<h3 class="text-sm font-bold text-[#00A79D]">Broadcast Request</h3>
+<p class="text-xs text-slate-600 dark:text-slate-400 leading-normal">
+                    Your request will be broadcast to verified local pharmacies. You will receive quotes and availability updates directly in your chat.
+                </p>
+</div>
+</div>
+<!-- Primary Action Button -->
+<div class="pt-4 pb-12">
+<button class="w-full bg-[#00A79D] hover:bg-[#008d84] text-white font-bold py-4 rounded-xl shadow-lg flex items-center justify-center gap-3 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined">send</span>
+                Send Broadcast Request
+            </button>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="sticky bottom-0 bg-white dark:bg-slate-900 border-t border-primary/10 px-2 py-2 flex items-center justify-around">
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-[#00A79D] transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-[#00A79D]" href="#">
+<div class="relative">
+<span class="material-symbols-outlined fill">sensors</span>
+<span class="absolute -top-1 -right-1 size-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wider">Live Status</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-[#00A79D] transition-colors" href="#">
+<span class="material-symbols-outlined">add_box</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">Hospital</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-[#00A79D] transition-colors" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>
