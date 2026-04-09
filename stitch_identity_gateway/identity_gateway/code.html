@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LifeLine Identity Gateway</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00a89d",
+                        "background-light": "#f0f4f3",
+                        "background-dark": "#0f1a19",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .card-3d-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 168, 157, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
+        .card-3d-shadow:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 12px -2px rgba(0, 168, 157, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col items-center">
+<header class="w-full max-w-md px-6 pt-12 pb-8 flex flex-col items-center">
+<div class="bg-primary/10 p-3 rounded-2xl mb-4">
+<span class="material-symbols-outlined text-primary text-4xl leading-none">health_and_safety</span>
+</div>
+<h1 class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 mb-1">LifeLine</h1>
+<p class="text-primary font-medium tracking-wide text-sm uppercase">Identity Gateway</p>
+</header>
+<main class="w-full max-w-md px-6 flex-grow space-y-6">
+<!-- User Card -->
+<div class="card-3d-shadow bg-white dark:bg-slate-800/50 rounded-2xl p-6 border border-white dark:border-slate-700 cursor-pointer flex flex-col items-start gap-4">
+<div class="flex items-center justify-between w-full">
+<div class="bg-primary/20 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl font-bold">medical_services</span>
+</div>
+<span class="material-symbols-outlined text-slate-300 dark:text-slate-600">arrow_forward_ios</span>
+</div>
+<div class="space-y-2">
+<h2 class="text-xl font-extrabold text-slate-900 dark:text-slate-50">I need help / Buying Medicine</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Find pharmacies near you and quickly verify your identity for prescription pickup.</p>
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-xl font-bold mt-2 shadow-lg shadow-primary/20">
+                Select Option
+            </button>
+</div>
+<!-- Provider Card -->
+<div class="card-3d-shadow bg-white dark:bg-slate-800/50 rounded-2xl p-6 border border-white dark:border-slate-700 cursor-pointer flex flex-col items-start gap-4">
+<div class="flex items-center justify-between w-full">
+<div class="bg-primary/20 p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl font-bold">storefront</span>
+</div>
+<span class="material-symbols-outlined text-slate-300 dark:text-slate-600">arrow_forward_ios</span>
+</div>
+<div class="space-y-2">
+<h2 class="text-xl font-extrabold text-slate-900 dark:text-slate-50">I am a Health Provider</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Access the provider secure portal to verify patient prescriptions and manage inventory.</p>
+</div>
+<button class="w-full bg-slate-900 dark:bg-primary text-white py-3 rounded-xl font-bold mt-2 shadow-lg">
+                Provider Login
+            </button>
+</div>
+</main>
+<footer class="w-full max-w-md p-8 text-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 dark:bg-slate-800/30 backdrop-blur-sm border border-white/50 dark:border-slate-700/50">
+<span class="text-slate-500 dark:text-slate-400 text-sm">New to the city?</span>
+<a class="text-primary font-bold text-sm hover:underline decoration-2 underline-offset-4" href="#">Quick Help</a>
+</div>
+<!-- Decorative Map Element -->
+<div class="mt-8 opacity-40 grayscale pointer-events-none">
+<div class="h-24 w-full rounded-2xl bg-cover bg-center" data-alt="Abstract minimalist city map pattern" data-location="New York City" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyMwJNjZfLyhAOUYg6Y3liGMBZn7hMewj96VkmqUSUBRqp_x0EpPIRCanrUq0BmsmL_QiW036K7TVyVgyO3ny2k5uqqWec1Dn4BaIkCS-jRNDMO4rwihAS41MHVMaflfwZadvb12mxLJGnErHVlAD0r_kfMpj6kKKnhP82QBFFeVCv7VtBER6sLIQKPDs5PHfchr4zdyhg1BWrBMSubmnY5RU93vwK87w0PHnaFo2326d8bdg-3gZxAAnlbUg_DjRU9BpCro6ACs1c');">
+</div>
+</div>
+</footer>
+</body></html>
