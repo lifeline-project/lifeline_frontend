@@ -56,7 +56,7 @@ flutter run
 
 ---
 
-## 📱 Running the App
+## Running the App
 
 * Connect a physical device OR start an emulator
 * Then run:
