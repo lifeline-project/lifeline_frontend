@@ -1,10 +1,10 @@
-# 🚀 Lifeline Frontend
+#  Lifeline Frontend
 
 This is the redesigned Flutter frontend for the Lifeline project with improved UI, optimized structure, and better performance.
 
 ---
 
-## 📦 Prerequisites
+##  Prerequisites
 
 Make sure you have the following installed:
 
@@ -21,7 +21,7 @@ flutter --version
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the repository
 
@@ -67,7 +67,7 @@ flutter run
 
 ---
 
-## 🛠️ Project Highlights
+## Project Highlights
 
 * Redesigned UI/UX
 * Optimized folder structure
@@ -76,7 +76,7 @@ flutter run
 
 ---
 
-## 📁 Folder Structure (Basic Overview)
+##  Folder Structure (Basic Overview)
 
 ```bash
 lib/
@@ -90,7 +90,7 @@ lib/
 ---
 
 
-## 📌 Notes
+##  Notes
 
 * Make sure you are on the `frontend-redesign` branch
 * If dependencies fail:
